@@ -8,7 +8,7 @@ def application(environ, start_response):
 <<<<<<< HEAD
     if environ['PATH_INFO'] == '/graph.png':
         try:
-            with open('graph.png', 'rb') as f:
+            with open('../img/graph.png', 'rb') as f:
 =======
     if environ['PATH_INFO'] == '/img/graph.png':
         try:
@@ -35,7 +35,7 @@ def application(environ, start_response):
             graph = plt.plot(x, y)
             plt.grid()
 <<<<<<< HEAD
-            fig.savefig('img/graph.png')
+            fig.savefig('../img/graph.png')
 =======
             fig.savefig('graph.png')
 >>>>>>> 5483074193d5c51333b80e6dede8fdd848a5f96a
